@@ -23,7 +23,7 @@ public class Customer {
      Enumeration rentals = _rentals.elements();
      String result = "Rental Record for " + getName() + "\n";
      while (rentals.hasMoreElements()) {
-        double thisAmount = 0;
+        double thisAmount = 0; 
         Rental each = (Rental) rentals.nextElement();
 
         //determine amounts for each line

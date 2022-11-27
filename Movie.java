@@ -13,7 +13,7 @@ public class Movie {
   }
 
   public int getPriceCode() {
-      return _priceCode;
+      return _priceCode; 
   }
 
   public void setPriceCode(int arg) {
