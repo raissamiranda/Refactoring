@@ -8,6 +8,15 @@ public class Rental {
       _daysRented = daysRented; 
    }
 
+  public int getFrequentRenterPoints(){
+    // add bonus for a two day new release rental
+    if ((this.getMovie().getPriceCode() == Movie.NEW_RELEASE) &&
+            this.getDaysRented() > 1){
+       return 2;
+    }
+    return 1;
+  }
+
  public double getCharge() {
     // Adicionar o trecho de código extraído.
     double thisAmount = 0;
